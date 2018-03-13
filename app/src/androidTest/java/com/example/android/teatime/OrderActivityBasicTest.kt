@@ -60,5 +60,6 @@ class OrderActivityBasicTest {
         .perform(click())
         // Verify that the decrement button won't decrease the quantity 0 and cost below $0.00
         onView(withId(R.id.cost_text_view)).check(matches(withText("$0.00")))
+        onView(withId(R.id.quantity_text_view)).check(matches(withText("0")))
     }
 }
